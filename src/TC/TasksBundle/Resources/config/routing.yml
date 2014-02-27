@@ -1,0 +1,51 @@
+tasks_index:
+    pattern: tasks/index
+    defaults: { _controller: TasksBundle:Tasks:index }
+    
+tasks_list:
+    pattern: tasks/list
+    defaults: { _controller: TasksBundle:Tasks:index }
+
+tasks_new:
+    pattern: tasks/new
+    defaults: { _controller: TasksBundle:Tasks:new }
+
+tasks_create:
+    pattern: tasks/create
+    defaults: { _controller: TasksBundle:Tasks:create }
+    requirements: { _method: post } 
+    
+#tasks_homepage:
+#    pattern:  /
+#    defaults: { _controller: TasksBundle:Default:index }
+#    
+#tasks_list:
+#    pattern:  /tasks/list
+#    defaults: { _controller: "TasksBundle:Tasks:index" }
+#    
+#tasks_new:
+#    pattern:  /tasks/new
+#    defaults: { _controller: "TasksBundle:Tasks:new" }
+#    
+#tasks_edit:
+#    pattern:  /tasks/{id}/edit
+#    defaults: { _controller: "TasksBundle:Tasks:edit" }
+#
+#tasks_show:
+#    pattern:  /tasks/{id}/show
+#    defaults: { _controller: "TasksBundle:Tasks:show" }
+#    
+#tasks_update:
+#    pattern:  /tasks/{id}/update
+#    defaults: { _controller: "TasksBundle:Tasks:update" }
+#    requirements: { _method: post|put }
+#    
+#tasks_create:
+#    pattern:  /tasks/create
+#    defaults: { _controller: "TasksBundle:Tasks:create" }
+#    requirements: { _method: post }
+#    
+#tasks_delete:
+#    pattern:  /tasks/{id}/delete
+#    defaults: { _controller: "TasksBundle:Tasks:delete" }
+#    requirements: { _method: post|delete }    

@@ -1,0 +1,12 @@
+parameters:
+#    tasks.example.class: TC\TasksBundle\Example
+
+services:
+#    tasks.example:
+#        class: %tasks.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
+
+services:
+    Repository:
+        class: TC\TasksBundle\Entity\Repository
+        arguments: [@doctrine.dbal.default_connection]
